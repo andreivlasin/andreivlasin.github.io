@@ -13,9 +13,10 @@ body {
 header {
     position: fixed;
     display: block;
-    background-color: red;
+    background-color: #ff1616;
     width: 100%;
     height: 130px;
+    z-index: 20;
 }
 
 
@@ -55,6 +56,11 @@ li {
     padding-top: 7px;
 }
 
+li:hover {
+    background-color: #ff1616 ;
+    color: black;
+}
+
 .search{
     position: relative;
     background-color: darkred;
@@ -67,7 +73,7 @@ li {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding-right: 6px;
+    padding-right: 20px;
     padding-top: 5px;
     padding-left: 45px;
     margin: 4px auto;
@@ -105,12 +111,54 @@ p{
 
 
 nav {
+    position: absolute;
     display: inline-block;
     float: left;
     height: 1000px;
     width: 15%;
     background-color: black;
+    z-index: 19;
 
+}
+
+.tablenav {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    text-align: center;
+}
+
+table{
+    width: 90%;
+    margin: 2px auto;
+}
+
+p.titulotabla {
+    position: relative;
+    color: white;
+    font-size: larger;
+    margin-left: 20%;
+    background-color: #3f3e3e;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+td {
+    height: 100px;
+    border-bottom: 2px gray solid;
+
+
+    
+}
+
+
+a {
+    color: white;
 }
 
 
@@ -123,6 +171,87 @@ main {
     left: 20%;
 }
 
+.contprincipal {
+    position: relative;
+    background-color: #6c181a;
+    height: 830px;
+    width: 100%;
+    top: 170px;
+}
+
+.cont1 {
+    position: relative;
+    background-color:#3f3e3e;
+    width: 100%;
+    height: 275px;
+    box-shadow: 0px 0px 40px #3f3e3e;
+
+}
+
+.cont1 div {
+    display: inline-block;
+    position: relative;
+    margin-left: 3%;
+    top: 10%;
+    height: 80%;
+}
+
+.cont1 .img1 {
+    background-color: aqua;
+    width: 30%;
+}
+
+.cont1 .text1 {
+    background-color: red;
+    width: 60%;
+}
+
+
+.cont2 {
+    position: relative;
+    background-color:#221f20;
+    width: 100%;
+    height: 275px;
+
+}
+
+
+
+.cont2 div {
+    position: relative;
+    display: inline-block;
+    margin-left: 6%;
+    top: 10%;
+    height: 80%;
+    width: 25%;
+    background-color: blue;
+}
+
+
+
+.cont3 {
+    position: relative;
+    background-color:#6c181a;
+    width: 100%;
+    height: 275px;
+
+}
+
+
+.cont3 div {
+    position: relative;
+    display: inline-block;
+    top: 10%;
+    height: 80%;
+    width: 25%;
+    background-color: blueviolet;
+    margin-left: 16%;
+}
+
+
+
+
+
 
 footer{
     position:static;
@@ -133,3 +262,21 @@ footer{
     background-color: red;
     float:inline-end;
 }
+
+.redesociales{
+    width: 15%;
+    height: 65%;
+    background-color: red;
+    margin: 20px auto;
+    text-align: center;
+}
+
+a img{
+    width: 33%;
+    height: auto;
+}
+.redesociales p{
+    color: white;
+}
+
+
