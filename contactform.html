@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleform.css">
+    <title>Formulario Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulario de contacto</h1>
+    </header>
+
+
+    <main>
+
+        <form action="/action.php">
+            <fieldset>
+                <legend>Nombre:</legend>
+                <label for="fname">Introduzca su nombre:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Nombre"><br>
+                <label for="lname">Introduzca su apellido:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Apellido">
+            </fieldset>
+
+            <fieldset>
+                <legend>Genero:</legend>
+                <label>Seleccione su genero</label><br>
+                <input type="radio" name="male" id="male"> Hombre <br>
+                <input type="radio" name="female" id="female"> Mujer <br>
+                <input type="radio" name="nonbinary" id="nonbinary"> No binario <br>
+                <input type="radio" name="noanswer" id="noanswer"> Prefiero no contestar <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nombre de la empresa:</legend>
+                <label for="cname">Introduzca el nombre de su empresa: </label><br>
+                <input type="text" id="cname" name="cname" placeholder="Company name">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Email:</legend>
+                <label for="femail">Introduzca su email: </label><br>
+                <input type="text" id="femail" name="femail" placeholder="account@email.org">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Fecha de nacimiento:</legend>
+                <label for="bdate">Introduzca su fecha de nacimiento</label><br>
+                <input type="date" id="bdate" name="bdate">
+            </fieldset>
+
+            <fieldset>
+                <legend>Numero de telefono:</legend>
+                <label for="tnum">Introduzca su numero de telefono</label><br>
+                <input type="text" id="tnum" name="tnum" placeholder="+01 123 456 789">
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensaje:</legend>
+                <label for="mesg">Introduzca sus principales motivos para contactar conmigo:</label> <br>
+                <textarea name="mesg" id="mesg" cols="30" rows="10" placeholder="Mensaje aqui:"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Accion:</legend>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Todo"> <br> <br>
+                <input type="file" name="file" id="file">
+            </fieldset>
+        </form>
+
+    </main>
+</body>
+
+</html>
